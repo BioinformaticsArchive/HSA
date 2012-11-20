@@ -26,7 +26,7 @@ LIBS=		-lm -lz #-lpthread
 
 all:$(PROG)
 
-bwsplice:$(OBJS) main.o
+HSA:$(OBJS) main.o
 		$(CC) $(CFLAGS) $(DFLAGS) $(OBJS) main.o $(LIBS) -o $@ 
 
 bwtaln.o:BWT.h bwtaln.h kseq.h
