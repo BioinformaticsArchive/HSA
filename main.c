@@ -10,13 +10,13 @@
 static int usage()
 {
 	fprintf(stderr, "\n");
-	fprintf(stderr, "Program: bwa (alignment via Burrows-Wheeler transformation)\n");
+	fprintf(stderr, "Program: HSA\n");
 	fprintf(stderr, "Version: %s\n", PACKAGE_VERSION);
-	fprintf(stderr, "Contact: Heng Li <lh3@sanger.ac.uk>\n\n");
-	fprintf(stderr, "Usage:   bwa <command> [options]\n\n");
+	fprintf(stderr, "Usage:   HSA <command> [options]\n\n");
 	fprintf(stderr, "Command: index         index sequences in the FASTA format\n");
 	fprintf(stderr, "         aln           gapped/ungapped alignment\n");
-  	fprintf(stderr, "         fa2pac        convert FASTA to PAC format\n");
+/*   	fprintf(stderr, "         fa2pac        convert FASTA to PAC format\n");
+ */
 	fprintf(stderr, "         samse         generate alignment (single ended)\n");
 /* 	fprintf(stderr, "         sampe         generate alignment (paired ended)\n");
  * 	fprintf(stderr, "         bwasw         BWA-SW for long queries\n");
@@ -38,7 +38,7 @@ static int usage()
 
 void bwt_print_sam_PG()
 {
-	printf("@PG\tID:bwsplice\tPN:bwsplice\tVN:%s\n", PACKAGE_VERSION);
+	printf("@PG\tID:HSA\tPN:HSA\tVN:%s\n", PACKAGE_VERSION);
 }
 
 int main(int argc, char *argv[])

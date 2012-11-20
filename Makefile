@@ -12,7 +12,7 @@ OBJS =      bwtaln.o bwtgap.o BWT.o BWTConstruct.o utils.o \
 			2BWT-Interface.o bwaseqio.o r250.o cs2nt.o bwtse.o kstring.o \
 			stdaln.o bwt_array.o
 
-PROG=		bwsplice
+PROG=		HSA
 INCLUDES=	
 LIBS=		-lm -lz #-lpthread
 #SUBDIRS=	. bwt_gen
